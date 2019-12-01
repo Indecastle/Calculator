@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Calculator Full</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sqrt">√</string>
+    <string name="sqrt3">³√</string>
+    <string name="ten">10˟</string>
+    <string name="squared">х²</string>
+    <string name="cube">х³</string>
+    <string name="anyDegree">xⁿ</string>
+    <string name="exp">e˟</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="log">log</string>
+    <string name="lg">lg</string>
+    <string name="mc">MC</string>
+    <string name="mplus">M+</string>
+    <string name="mr">MR</string>
+
+</resources>
