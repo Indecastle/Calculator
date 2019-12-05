@@ -17,11 +17,9 @@ import com.example.calculator.R;
  * A simple {@link Fragment} subclass.
  */
 public class ScientificFuncs extends Fragment implements View.OnClickListener {
-    private CalculatorController calculatorController;
     public Integer textSize;
 
     public ScientificFuncs() {
-        calculatorController = CalculatorController.getInstance();
         textSize =10;
     }
 
@@ -61,49 +59,49 @@ public class ScientificFuncs extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
 
             case R.id.sqrt:
-                calculatorController.buttonClickHandler("sqrt");
+                CalculatorController.getInstance().buttonClickHandler("sqrt");
                 break;
             case R.id.sqrt3:
-                calculatorController.buttonClickHandler("sqrt3");
+                CalculatorController.getInstance().buttonClickHandler("sqrt3");
                 break;
             case R.id.ten:
-                calculatorController.buttonClickHandler("ten");
+                CalculatorController.getInstance().buttonClickHandler("ten");
                 break;
             case R.id.squared:
-                calculatorController.buttonClickHandler("squared");
+                CalculatorController.getInstance().buttonClickHandler("squared");
                 break;
             case R.id.cube:
-                calculatorController.buttonClickHandler("cube");
+                CalculatorController.getInstance().buttonClickHandler("cube");
                 break;
             case R.id.exp:
-                calculatorController.buttonClickHandler("exp");
+                CalculatorController.getInstance().buttonClickHandler("exp");
                 break;
             case R.id.sin:
-                calculatorController.buttonClickHandler("sin");
+                CalculatorController.getInstance().buttonClickHandler("sin");
                 break;
             case R.id.cos:
-                calculatorController.buttonClickHandler("cos");
+                CalculatorController.getInstance().buttonClickHandler("cos");
                 break;
             case R.id.tan:
-                calculatorController.buttonClickHandler("tan");
+                CalculatorController.getInstance().buttonClickHandler("tan");
                 break;
             case R.id.log:
-                calculatorController.buttonClickHandler("log");
+                CalculatorController.getInstance().buttonClickHandler("log");
                 break;
             case R.id.lg:
-                calculatorController.buttonClickHandler("lg");
+                CalculatorController.getInstance().buttonClickHandler("lg");
                 break;
             case R.id.mc:
-                calculatorController.buttonClickHandler("mc");
+                CalculatorController.getInstance().buttonClickHandler("mc");
                 break;
             case R.id.mPlus:
-                calculatorController.buttonClickHandler("mPlus");
+                CalculatorController.getInstance().buttonClickHandler("mPlus");
                 break;
             case R.id.mr:
-                calculatorController.buttonClickHandler("mr");
+                CalculatorController.getInstance().buttonClickHandler("mr");
                 break;
             case R.id.anyDegree:
-                calculatorController.buttonClickHandler("anyDegree");
+                CalculatorController.getInstance().buttonClickHandler("anyDegree");
                 break;
         }
     }

@@ -14,11 +14,9 @@ import androidx.fragment.app.Fragment;
  * A simple {@link Fragment} subclass.
  */
 public class NumsAndBasicFuncs extends Fragment implements View.OnClickListener {
-    private CalculatorController calculatorController;
     public Integer textSize;
 
     public NumsAndBasicFuncs() {
-        calculatorController = CalculatorController.getInstance();
         textSize = 10;
     }
 
@@ -63,72 +61,72 @@ public class NumsAndBasicFuncs extends Fragment implements View.OnClickListener 
         switch (view.getId()) {
             // digits
             case R.id.one:
-                calculatorController.buttonClickHandler("1");
+                CalculatorController.getInstance().buttonClickHandler("1");
                 break;
             case R.id.two:
-                calculatorController.buttonClickHandler("2");
+                CalculatorController.getInstance().buttonClickHandler("2");
                 break;
             case R.id.three:
-                calculatorController.buttonClickHandler("3");
+                CalculatorController.getInstance().buttonClickHandler("3");
                 break;
             case R.id.four:
-                calculatorController.buttonClickHandler("4");
+                CalculatorController.getInstance().buttonClickHandler("4");
                 break;
             case R.id.five:
-                calculatorController.buttonClickHandler("5");
+                CalculatorController.getInstance().buttonClickHandler("5");
                 break;
             case R.id.six:
-                calculatorController.buttonClickHandler("6");
+                CalculatorController.getInstance().buttonClickHandler("6");
                 break;
             case R.id.seven:
-                calculatorController.buttonClickHandler("7");
+                CalculatorController.getInstance().buttonClickHandler("7");
                 break;
             case R.id.eight:
-                calculatorController.buttonClickHandler("8");
+                CalculatorController.getInstance().buttonClickHandler("8");
                 break;
             case R.id.nine:
-                calculatorController.buttonClickHandler("9");
+                CalculatorController.getInstance().buttonClickHandler("9");
                 break;
             case R.id.zero:
-                calculatorController.buttonClickHandler("0");
+                CalculatorController.getInstance().buttonClickHandler("0");
                 break;
             case R.id.pm:
-                calculatorController.buttonClickHandler("pm");
+                CalculatorController.getInstance().buttonClickHandler("pm");
                 break;
 
             // point
             case R.id.point:
-                calculatorController.buttonClickHandler(".");
+                CalculatorController.getInstance().buttonClickHandler(".");
                 break;
 
             // clear
             case R.id.del:
-                calculatorController.buttonClickHandler("del");
+                CalculatorController.getInstance().buttonClickHandler("del");
                 break;
 
             // math const
             case R.id.pi:
-                calculatorController.buttonClickHandler("pi");
+                CalculatorController.getInstance().buttonClickHandler("pi");
                 break;
             case R.id.e:
-                calculatorController.buttonClickHandler("e");
+                CalculatorController.getInstance().buttonClickHandler("e");
                 break;
 
             // binary functions
             case R.id.div:
-                calculatorController.buttonClickHandler("/");
+                CalculatorController.getInstance().buttonClickHandler("/");
                 break;
             case R.id.mult:
-                calculatorController.buttonClickHandler("*");
+                CalculatorController.getInstance().buttonClickHandler("*");
                 break;
             case R.id.minus:
-                calculatorController.buttonClickHandler("-");
+                CalculatorController.getInstance().buttonClickHandler("-");
                 break;
             case R.id.plus:
-                calculatorController.buttonClickHandler("+");
+                CalculatorController.getInstance().buttonClickHandler("+");
                 break;
             case R.id.equal:
-                calculatorController.buttonClickHandler("=");
+                CalculatorController.getInstance().buttonClickHandler("=");
                 break;
 
         }
