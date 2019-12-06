@@ -16,6 +16,7 @@ import com.example.calculator.R;
 
 public class MainActivity extends AppCompatActivity {
     private TextView calculatorText;
+    private TextView operationText;
     private CalculatorController calculatorController;
 
     @Override
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         calculatorText = findViewById(R.id.calcText);
+        operationText = findViewById(R.id.operationText);
 
         Consumer<String> updateCalculatorText = new Consumer<String>() {
             @Override
@@ -31,10 +33,16 @@ public class MainActivity extends AppCompatActivity {
                 calculatorText.setText(string);
             }
         };
+        Consumer<String> updateOperationText = new Consumer<String>() {
+            @Override
+            public void accept(String string) {
+                operationText.setText(string);
+            }
+        };
 
         // get an instance of controller and set calculator text updating method to it
         calculatorController = CalculatorController.getInstance();
-        calculatorController.setUpdateCalculatorText(updateCalculatorText);
+        calculatorController.setUpdateCalculatorText(updateCalculatorText, updateOperationText);
 
         // set fragments into their containers
         final LinearLayout basicFragmentContainer = findViewById(R.id.basic_fragment_container);
@@ -74,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else{
-            numsAndBasicFuncs.textSize = 25;
-            scientificFuncs.textSize = 25;
+            numsAndBasicFuncs.textSize = 20;
+            scientificFuncs.textSize = 20;
         }
 
 

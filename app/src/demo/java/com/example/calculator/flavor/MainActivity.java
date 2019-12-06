@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.fragment_container, numsAndBasicFuncs);
         fragmentTransaction.commit();
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-            numsAndBasicFuncs.size = 40;
+            numsAndBasicFuncs.textSize = 40;
         }
         else{
-            numsAndBasicFuncs.size = 24;
+            numsAndBasicFuncs.textSize = 20;
         }
     }
 }

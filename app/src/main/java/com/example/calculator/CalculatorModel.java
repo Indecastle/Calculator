@@ -18,6 +18,18 @@ public class CalculatorModel {
     private String savedOperation;
     private double memory;
 
+    public void setOperator(String operator) {
+
+        double currentOperator = Double.valueOf(operator);
+        if(savedOperator != null){
+            savedOperator = currentOperator;
+        }
+    }
+    public void dellOperator() {
+        savedOperator = null;
+        savedOperation = null;
+    }
+
     public String getResultOfOperation(String currentOperation, double currentOperator) {
         String result;
 

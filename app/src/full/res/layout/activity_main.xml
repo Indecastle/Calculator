@@ -10,8 +10,7 @@
     <TextView
         android:id="@+id/calcText"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:textSize="30dp"
@@ -19,6 +18,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.16"
         tools:layout_editor_absoluteX="-2dp" />
+
+    <TextView
+        android:id="@+id/operationText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        tools:layout_editor_absoluteX="-2dp" />
+
 
     <LinearLayout
         android:id="@+id/basic_fragment_container"
@@ -45,6 +58,8 @@
         android:layout_marginTop="500dp"
         android:text="change mode"
         android:textSize="12dp" />
+
+
 
 
 </RelativeLayout>
